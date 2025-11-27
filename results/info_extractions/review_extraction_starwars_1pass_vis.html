@@ -1,0 +1,388 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">audience_impact</span> <span class="lx-label" style="background-color:#C8E6C9;">opinion_statement</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        **Page 1**
+&quot;&quot;&quot;
+Promotional Poster for The Rise of Skywalker (2019)
+MOVIE REVIEW — Star Wars Episode IX: The
+Rise of Skywalker
+A Messy Finale 42 Years in the Making — ★★★☆☆
+9 min read · Dec 24, 2019
+NotVeryProfoundFilm
+Follow
+Listen
+Share
+The Dead Speak! These are the first words seen in the title crawl of Star Wars Episode
+IX (other than the title, obviously) and that one sentence can be applied to the
+entirety of this Disney Era of Star Wars. <span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#C8E6C9;">A seemingly dead film franchise brought
+back</span> from an early 2000’s extinction at the hands of series creator George Lucas with
+the prequel trilogy. Nothing’s ever really gone though, and so here we are. Five years
+removed from the arrival of J.J. Abrams’ The Force Awakens in 2014 and we now have
+a total of five new entries into the Star Wars franchise, as well as the arrival of new
+shows such as The Mandalorian on Disney+. <span class="lx-highlight" data-idx="1" style="background-color:#C8E6C9;">Opinions vary</span> on this new set of films
+&quot;&quot;&quot;
+
+**Page 2**
+&quot;&quot;&quot;
+from love, hate, and totally indifferent, but one thing is certain; everyone has an
+opinion. The difference between the Original and Prequel Trilogies and the Sequel
+Trilogy is their release date. The former were released in times when social media
+was either not in existence or not prominent at all, whereas with the newest movies,
+fans are able to share their thoughts, both negative and positive, in an instant. This
+<span class="lx-highlight" data-idx="2" style="background-color:#D2E3FC;">lead to the infamous outspoken hatred</span> for Rian Johnson’s The Last Jedi from a vocal
+subset of fans and the rest is history. <span class="lx-highlight" data-idx="3" style="background-color:#C8E6C9;">Star Wars fans have now all been labeled as
+trashy misogynistic man-children</span> fighting with each other over their supposed
+ownership and love of the series. With the fanbase divided headed into the grand
+finale of the Skywalker Saga, what would J.J. Abrams do to try and bring things
+home? If you have seen it, you already know, so let’s just get right into it. Here are
+my thoughts after seeing Star Wars Episode IX: The Rise of Skywalker twice (once in
+digital and once in IMAX)!
+MOVIE REVIEW — Knives Out
+A New Age Whodunit Done Masterfully — ★★★★1/2
+medium.com
+The Rise of Skywalker picks up a few years (?) after The Last Jedi, with our band of
+resistance fighters scouring the galaxy for intelligence on the growing First Order.
+Meanwhile, Emperor Palpatine (Ian McDiarmid)has returned from the grave
+following his death in Return of the Jedi, as he calls out to the now Supreme Leader
+of the First Order, Kylo Ren (Adam Driver). If this is starting to sound fanfiction-like,
+just wait, there’s more. Rey (Daisy Ridley) is now training under the Jedi training
+from General Leia Organa (Carrie Fisher) who we learn had a sizable amount of Jedi
+training from her brother Luke Skywalker (Mark Hamill). Now at the helm of the
+Millenium Falcon, Poe Dameron (Oscar Issac) and Finn (John Boyega) join
+Chewbacca (Joonas Suotamo) in place of former captains Han Solo and Rey, as the
+&quot;&quot;&quot;
+
+**Page 3**
+&quot;&quot;&quot;
+opening of the film sees them on the search for a First Order Spy. From here on out,
+this review will be dealing in HEAVY SPOILERS, so if you have yet to see the film I
+suggest exiting and coming back to read after watching…
+Right, so this movie… this fucking movie. Coming out of The Last Jedi <span class="lx-highlight" data-idx="4" style="background-color:#D2E3FC;">I felt such a
+reinvigorated interest in Star Wars</span> as Rian Johnson did something that others
+seemingly feared; <span class="lx-highlight" data-idx="5" style="background-color:#C8E6C9;">he took a risk</span> (actually, lots of risks). The man knew that <span class="lx-highlight" data-idx="6" style="background-color:#C8E6C9;">the
+franchise needed to evolve</span> after Abrams’ initial revival with The Force Awakens,
+which has already been criticized enough for <span class="lx-highlight" data-idx="7" style="background-color:#C8E6C9;">just being a rehash of A New Hope</span> (it
+really is), and decided to take the leap by doing just that with his entry into the
+Skywalker Saga. Some people obviously were not expecting that and much rather
+were expecting Episode VIII to at similarly as a sort-of reboot of The Empire Strikes
+Back. Rian Johnson knew that <span class="lx-highlight" data-idx="8" style="background-color:#C8E6C9;">should not be the case</span>. Anywho, this is not a review of
+The Last Jedi, but the question remains: how would Abrams handle the backlash
+that Johnson’s film got while also trying to continue the story AND having to wrap
+up a nine film story? By shooting the final installment with an injection of
+adrenaline, nostalgia, and retcons of course!
+Get NotVeryProfoundFilm’s stories in your inbox
+Join Medium for free to get updates from this writer.
+Enter your email
+Subscribe
+I’m going to try my best to prevent this from becoming rambly or a ranty, but
+something has to be said about the handling of the Sequel Trilogy from a creative
+standpoint no matter your opinions on the movies. Firstly, <span class="lx-highlight" data-idx="9" style="background-color:#C8E6C9;">Kathleen Kennedy is a
+legend and gets more unwarranted hate from “fans” than she deserves</span>… that being
+said, why <span class="lx-highlight" data-idx="10" style="background-color:#C8E6C9;">the overall story arc for all three films was not laid out BEFORE The Force
+Awakens was made</span> is something I have no idea about. I have no issue with different
+directors making these movies (see; the Original Trilogy) and frankly, it’s the same
+situation with writers (again, see; the Original Trilogy). The franchise has grown
+exponentially since the 1970’s and 1980’s with TV shows and other films being
+released, with continuity needing to be taken specific care of. If there is one main
+issue with The Rise of Skywalker, it is the continuity (or lack thereof) with The Last
+&quot;&quot;&quot;
+
+**Page 4**
+&quot;&quot;&quot;
+Jedi. <span class="lx-highlight" data-idx="11" style="background-color:#C8E6C9;">This movie feels like such a loose sequel to Episode VIII, and more of like a
+continuation of Episode VII, which is a real shame.</span> <span class="lx-highlight" data-idx="12" style="background-color:#C8E6C9;">Plot points like Rey’s parentage
+are brought back into the focus after Johnson provided his answers in that Rey did
+NOT need to be anyone special</span>, with <span class="lx-highlight" data-idx="13" style="background-color:#C8E6C9;">Abrams offering a big sike to that aspect,
+opting to just go all out and make her Palpatine’s granddaughter.</span> Similarly, a
+character like Rose, who was introduced in The Last Jedi, is given the cold shoulder
+both figuratively and literally in the film, just sitting on the sidelines after the
+infamous incident with actress Kelly Marie Tran being the victim of targeted
+harassment, bullying, and death threats following The Last Jedi. Nice to show
+solidarity in the Star Wars family!
+Kelly Marie Tran in The Last Jedi (2017)
+If that wasn’t enough, <span class="lx-highlight" data-idx="14" style="background-color:#C8E6C9;">the script is just one hell of a mess</span>. <span class="lx-highlight" data-idx="15" style="background-color:#C8E6C9;">It isn’t an abomination like
+The Phantom Menace or Attack of the Clones</span>, <span class="lx-highlight" data-idx="16" style="background-color:#C8E6C9;">which both featured some of the most
+boring writing and worst dialogue of a major motion picture (arguably) to date</span>. <span class="lx-highlight" data-idx="17" style="background-color:#C8E6C9;">The
+Rise of Skywalker is at the very least, engaging and entertaining</span>. That doesn’t change
+the fact that <span class="lx-highlight" data-idx="18" style="background-color:#C8E6C9;">the movie is a mess, with the worst pacing of the Disney Era</span>. <span class="lx-highlight" data-idx="19" style="background-color:#C8E6C9;">Rarely
+does this film slow down for a moment of just talking or any true emotional beats</span>.
+Genuinely, the only two I can think of are <span class="lx-highlight" data-idx="20" style="background-color:#C8E6C9;">the scenes between Kylo and Ben and Rey
+and Luke, which just so happen to be two of the best scenes in the film (and actually
+are two of my favorite scenes in the entire franchise</span>). For some reason, the choice
+was made to make this film a sprint for the entire two hour and twenty two minute
+&quot;&quot;&quot;
+
+**Page 5**
+&quot;&quot;&quot;
+runtime, <span class="lx-highlight" data-idx="21" style="background-color:#D2E3FC;">which just left me feeling exhausted as the credits began to roll</span>. I will say, <span class="lx-highlight" data-idx="22" style="background-color:#D2E3FC;">I
+did enjoy the ride much more the second time as I knew what was coming and
+wasn’t totally taken out of the movie with the Rey Palpatine reveal</span>.
+The Sith Throne from The Rise of Skywalker (2019)
+what are some positives about this movie? There has to be some after all
+since I did give it three stars… As mentioned above, <span class="lx-highlight" data-idx="23" style="background-color:#C8E6C9;">the scene with Ben
+Solo and Han Solo sharing another moment together on the remains of the Death
+Star II is truly amazing, and one of the best the entire series has to offer</span>. It acts as a
+reflection of Han’s death scene in The Force Awakens, and features both Harrison
+<span class="lx-highlight" data-idx="24" style="background-color:#C8E6C9;">Ford and Adam Driver proving why they are the two best actors in Star Wars</span>.
+Similarly, <span class="lx-highlight" data-idx="25" style="background-color:#C8E6C9;">the scene between Rey and Luke</span> (now a Force ghost) is also fantastic,
+outside of <span class="lx-highlight" data-idx="26" style="background-color:#C8E6C9;">Luke’s “a Jedi’s weapon should never be handled so carelessly” line</span>, which
+was clearly written to appease critics of Luke’s portrayal in The Last Jedi. Luke finally
+gets to lift the X-wing, as the music of Yoda and the Force from Empire Strikes Back
+swirls to an uproar in a truly iconic moment. <span class="lx-highlight" data-idx="27" style="background-color:#C8E6C9;">John Williams’ final Star Wars score is
+just as good as ever</span>, and he deservedly earns a cameo in the film as the bartender on
+Kijimi. <span class="lx-highlight" data-idx="28" style="background-color:#C8E6C9;">C-3PO (Anthony Daniels) is probably my favorite part of the film</span>. <span class="lx-highlight" data-idx="29" style="background-color:#C8E6C9;">The
+character we all know and love finally finds his way back into the main cast</span> after
+serving as a background character for several movies across both the Prequels and
+Sequels, and in doing so, <span class="lx-highlight" data-idx="30" style="background-color:#C8E6C9;">has his best showing in ANY of the Star Wars films</span>.
+So
+&quot;&quot;&quot;
+
+**Page 6**
+&quot;&quot;&quot;
+Seriously, whoever made the call to give 3PO this treatment deserves a raise because
+nearly anytime he talked, <span class="lx-highlight" data-idx="31" style="background-color:#D2E3FC;">he had me dying of laughter</span>.
+Babu Frik in The Rise of Skywalker (2019)
+A List of Random Bits I Loved About the Film:
+<span class="lx-highlight" data-idx="32" style="background-color:#C8E6C9;">Babu Frik is an icon, a king</span>, and he needs to be protected at all costs
+<span class="lx-highlight" data-idx="33" style="background-color:#C8E6C9;">Zori Bliss and Poe Dameron would be great candidates for a Disney+ show</span>
+<span class="lx-highlight" data-idx="34" style="background-color:#C8E6C9;">Finn being force sensitive is something I like</span>, but wish they delved deeper into
+<span class="lx-highlight" data-idx="35" style="background-color:#C8E6C9;">Ian McDiarmid is FUCKING terrifying as always as Palpatine here</span>
+Billie Lourd being in these movies… though I wish they did more with her (see;
+Booksmart)
+<span class="lx-highlight" data-idx="36" style="background-color:#C8E6C9;">The usage of Carrie Fisher is shockingly good</span> for using unused footage from The
+Force Awakens
+<span class="lx-highlight" data-idx="37" style="background-color:#C8E6C9;">Billy Dee Williams as Lando, just yes</span>
+The voice cameos of fallen Jedi in the finale
+The fact that Porgs made it into this movie
+&quot;&quot;&quot;
+
+**Page 7**
+&quot;&quot;&quot;
+Exegol is a dope planet and the Sith palace has some awesome production
+design
+<span class="lx-highlight" data-idx="38" style="background-color:#C8E6C9;">Kylo and Rey’s force facetime continuing to evolve from The Last Jedi was
+actually awesome</span> and <span class="lx-highlight" data-idx="39" style="background-color:#C8E6C9;">was the one thing Abrams and pals did a great job in
+building on from Rian Johnson’s film</span>
+<span class="lx-highlight" data-idx="40" style="background-color:#C8E6C9;">Ben Solo fighting SO differently than Kylo Ren</span>
+The Lightsaber Duel on the Death Star II remains
+Kylo Ren Gif from The Rise of Skywalker (2019)
+Opinions will always vary on Star Wars, and I doubt the day ever comes where the
+fanbase unites and learns to let each other have their opinions, but what can you do?
+This series is deeply rooted in pop culture history, continues to rake in money, and
+still has a significant fanbase despite what some Episode VIII haters might try to tell
+you, so Star Wars isn’t going anywhere. If you enjoyed this movie, let others know!
+People shouldn’t be scared to share their opinions on something they love, whether
+they like or dislike an entry into the ongoing saga. Anyways, I’m just a guy who loves
+Star Wars, flaws and all, so listen to me or don’t, that choice is yours. If you are
+looking for some more Star Wars content, I should note that coming in January I will
+be doing an entire retrospective on the franchise as a whole, as well as A Look
+Ahead to “What Next?” for Star Wars! If that’s something you might be interested in,
+be sure to follow me here or over on Twitter (which you can find below). But to
+those still reading, May the Force be With You… Always.
+&quot;&quot;&quot;
+
+**Page 8**
+&quot;&quot;&quot;
+Star Wars — The Skywalker Saga Artwork
+Star Wars Episode IX: The Rise of Skywalker is playing in theaters worldwide now, so go
+check it out if you haven’t yet!
+Twitter — https://twitter.com/patcoylesimmons
+Letterboxd — https://letterboxd.com/Protacrastic/
+If you are interested, I also got to see Portrait of a Lady on Fire at the Philadelphia
+Film Festival and wrote up an official review which you can check out here:
+MOVIE REVIEW — Portrait of a Lady on Fire
+<span class="lx-highlight" data-idx="41" style="background-color:#C8E6C9;">A Film as Beautiful as the Paintings Within — ★★★★★</span>
+medium.com
+Star Wars
+Movies
+Film
+Film Reviews
+Movie Review
+&quot;&quot;&quot;
+
+
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="41" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/42</span> |
+          Pos <span id="posInfo">[448-492]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "opinion_statement", "text": "A seemingly dead film franchise brought back", "color": "#C8E6C9", "startPos": 448, "endPos": 492, "beforeText": "crawl of Star Wars Episode\nIX (other than the title, obviously) and that one sentence can be applied to the\nentirety of this Disney Era of Star Wars. ", "extractionText": "A seemingly dead film franchise brought\nback", "afterText": " from an early 2000\u2019s extinction at the hands of series creator George Lucas with\nthe prequel trilogy. Nothing\u2019s ever really gone though, and so here ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The film franchise</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">dead...brought back</span>}</div>"}, {"index": 1, "class": "opinion_statement", "text": "Opinions vary", "color": "#C8E6C9", "startPos": 874, "endPos": 887, "beforeText": "014 and we now have\na total of five new entries into the Star Wars franchise, as well as the arrival of new\nshows such as The Mandalorian on Disney+. ", "extractionText": "Opinions vary", "afterText": " on this new set of films\n&quot;&quot;&quot;\n\n**Page 2**\n&quot;&quot;&quot;\nfrom love, hate, and totally indifferent, but one thing is certain; everyone has an\nopinion. The differe", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Opinions</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">vary</span>}</div>"}, {"index": 2, "class": "audience_impact", "text": "lead to the infamous outspoken hatred", "color": "#D2E3FC", "startPos": 1354, "endPos": 1391, "beforeText": "tence or not prominent at all, whereas with the newest movies,\nfans are able to share their thoughts, both negative and positive, in an instant. This\n", "extractionText": "lead to the infamous outspoken hatred", "afterText": " for Rian Johnson\u2019s The Last Jedi from a vocal\nsubset of fans and the rest is history. Star Wars fans have now all been labeled as\ntrashy misogynistic", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">anger, disgust</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">The release of the films and social media</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">fans</span>}</div>"}, {"index": 3, "class": "opinion_statement", "text": "Star Wars fans have now all been labeled as trashy misogynistic man-children", "color": "#C8E6C9", "startPos": 1478, "endPos": 1554, "beforeText": "tive, in an instant. This\nlead to the infamous outspoken hatred for Rian Johnson\u2019s The Last Jedi from a vocal\nsubset of fans and the rest is history. ", "extractionText": "Star Wars fans have now all been labeled as\ntrashy misogynistic man-children", "afterText": " fighting with each other over their supposed\nownership and love of the series. With the fanbase divided headed into the grand\nfinale of the Skywalker", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Star Wars fans</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">trashy misogynistic man-children</span>}</div>"}, {"index": 4, "class": "audience_impact", "text": "I felt such a reinvigorated interest in Star Wars", "color": "#D2E3FC", "startPos": 3172, "endPos": 3221, "beforeText": "e yet to see the film I\nsuggest exiting and coming back to read after watching\u2026\nRight, so this movie\u2026 this fucking movie. Coming out of The Last Jedi ", "extractionText": "I felt such a\nreinvigorated interest in Star Wars", "afterText": " as Rian Johnson did something that others\nseemingly feared; he took a risk (actually, lots of risks). The man knew that the\nfranchise needed to evolv", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">engaged, excited</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">The Last Jedi</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">the reviewer</span>}</div>"}, {"index": 5, "class": "opinion_statement", "text": "he took a risk", "color": "#C8E6C9", "startPos": 3282, "endPos": 3296, "beforeText": "king movie. Coming out of The Last Jedi I felt such a\nreinvigorated interest in Star Wars as Rian Johnson did something that others\nseemingly feared; ", "extractionText": "he took a risk", "afterText": " (actually, lots of risks). The man knew that the\nfranchise needed to evolve after Abrams\u2019 initial revival with The Force Awakens,\nwhich has already b", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Rian Johnson</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">took a risk</span>}</div>"}, {"index": 6, "class": "opinion_statement", "text": "the franchise needed to evolve", "color": "#C8E6C9", "startPos": 3342, "endPos": 3372, "beforeText": "gorated interest in Star Wars as Rian Johnson did something that others\nseemingly feared; he took a risk (actually, lots of risks). The man knew that ", "extractionText": "the\nfranchise needed to evolve", "afterText": " after Abrams\u2019 initial revival with The Force Awakens,\nwhich has already been criticized enough for just being a rehash of A New Hope (it\nreally is), ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">the franchise</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">needed to evolve</span>}</div>"}, {"index": 7, "class": "opinion_statement", "text": "just being a rehash of A New Hope", "color": "#C8E6C9", "startPos": 3472, "endPos": 3505, "beforeText": ". The man knew that the\nfranchise needed to evolve after Abrams\u2019 initial revival with The Force Awakens,\nwhich has already been criticized enough for ", "extractionText": "just being a rehash of A New Hope", "afterText": " (it\nreally is), and decided to take the leap by doing just that with his entry into the\nSkywalker Saga. Some people obviously were not expecting that", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The Force Awakens</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">rehash of A New Hope</span>}</div>"}, {"index": 8, "class": "opinion_statement", "text": "should not be the case", "color": "#C8E6C9", "startPos": 3787, "endPos": 3809, "beforeText": "not expecting that and much rather\nwere expecting Episode VIII to at similarly as a sort-of reboot of The Empire Strikes\nBack. Rian Johnson knew that ", "extractionText": "should not be the case", "afterText": ". Anywho, this is not a review of\nThe Last Jedi, but the question remains: how would Abrams handle the backlash\nthat Johnson\u2019s film got while also try", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Episode VIII to similarly as a sort-of reboot of The Empire Strikes Back</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">should not be the case</span>}</div>"}, {"index": 9, "class": "opinion_statement", "text": "Kathleen Kennedy is a legend and gets more unwarranted hate from \u201cfans\u201d than she deserves", "color": "#C8E6C9", "startPos": 4475, "endPos": 4564, "beforeText": "nty, but\nsomething has to be said about the handling of the Sequel Trilogy from a creative\nstandpoint no matter your opinions on the movies. Firstly, ", "extractionText": "Kathleen Kennedy is a\nlegend and gets more unwarranted hate from \u201cfans\u201d than she deserves", "afterText": "\u2026 that being\nsaid, why the overall story arc for all three films was not laid out BEFORE The Force\nAwakens was made is something I have no idea about.", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Kathleen Kennedy</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">a legend</span>}</div>"}, {"index": 10, "class": "opinion_statement", "text": "the overall story arc for all three films was not laid out BEFORE The Force Awakens was made", "color": "#C8E6C9", "startPos": 4587, "endPos": 4679, "beforeText": "your opinions on the movies. Firstly, Kathleen Kennedy is a\nlegend and gets more unwarranted hate from \u201cfans\u201d than she deserves\u2026 that being\nsaid, why ", "extractionText": "the overall story arc for all three films was not laid out BEFORE The Force\nAwakens was made", "afterText": " is something I have no idea about. I have no issue with different\ndirectors making these movies (see; the Original Trilogy) and frankly, it\u2019s the sam", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The overall story arc</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">not laid out</span>}</div>"}, {"index": 11, "class": "opinion_statement", "text": "This movie feels like such a loose sequel to Episode VIII, and more of like a continuation of Episode VII, which is a real shame.", "color": "#C8E6C9", "startPos": 5190, "endPos": 5319, "beforeText": "ecific care of. If there is one main\nissue with The Rise of Skywalker, it is the continuity (or lack thereof) with The Last\n&quot;&quot;&quot;\n\n**Page 4**\n&quot;&quot;&quot;\nJedi. ", "extractionText": "This movie feels like such a loose sequel to Episode VIII, and more of like a\ncontinuation of Episode VII, which is a real shame.", "afterText": " Plot points like Rey\u2019s parentage\nare brought back into the focus after Johnson provided his answers in that Rey did\nNOT need to be anyone special, wi", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">This movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">loose sequel</span>}</div>"}, {"index": 12, "class": "opinion_statement", "text": "Plot points like Rey\u2019s parentage are brought back into the focus after Johnson provided his answers in that Rey did NOT need to be anyone special", "color": "#C8E6C9", "startPos": 5320, "endPos": 5465, "beforeText": "*Page 4**\n&quot;&quot;&quot;\nJedi. This movie feels like such a loose sequel to Episode VIII, and more of like a\ncontinuation of Episode VII, which is a real shame. ", "extractionText": "Plot points like Rey\u2019s parentage\nare brought back into the focus after Johnson provided his answers in that Rey did\nNOT need to be anyone special", "afterText": ", with Abrams offering a big sike to that aspect,\nopting to just go all out and make her Palpatine\u2019s granddaughter. Similarly, a\ncharacter like Rose, ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Plot points</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">brought back into focus</span>}</div>"}, {"index": 13, "class": "opinion_statement", "text": "Abrams offering a big sike to that aspect, opting to just go all out and make her Palpatine\u2019s granddaughter.", "color": "#C8E6C9", "startPos": 5472, "endPos": 5580, "beforeText": "ot points like Rey\u2019s parentage\nare brought back into the focus after Johnson provided his answers in that Rey did\nNOT need to be anyone special, with ", "extractionText": "Abrams offering a big sike to that aspect,\nopting to just go all out and make her Palpatine\u2019s granddaughter.", "afterText": " Similarly, a\ncharacter like Rose, who was introduced in The Last Jedi, is given the cold shoulder\nboth figuratively and literally in the film, just s", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Abrams</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">big sike</span>}</div>"}, {"index": 14, "class": "opinion_statement", "text": "the script is just one hell of a mess", "color": "#C8E6C9", "startPos": 6019, "endPos": 6056, "beforeText": "ath threats following The Last Jedi. Nice to show\nsolidarity in the Star Wars family!\nKelly Marie Tran in The Last Jedi (2017)\nIf that wasn\u2019t enough, ", "extractionText": "the script is just one hell of a mess", "afterText": ". It isn\u2019t an abomination like\nThe Phantom Menace or Attack of the Clones, which both featured some of the most\nboring writing and worst dialogue of a", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The script</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">hell of a mess</span>}</div>"}, {"index": 15, "class": "opinion_statement", "text": "It isn\u2019t an abomination like The Phantom Menace or Attack of the Clones", "color": "#C8E6C9", "startPos": 6058, "endPos": 6129, "beforeText": "ce to show\nsolidarity in the Star Wars family!\nKelly Marie Tran in The Last Jedi (2017)\nIf that wasn\u2019t enough, the script is just one hell of a mess. ", "extractionText": "It isn\u2019t an abomination like\nThe Phantom Menace or Attack of the Clones", "afterText": ", which both featured some of the most\nboring writing and worst dialogue of a major motion picture (arguably) to date. The\nRise of Skywalker is at the", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The Phantom Menace or Attack of the Clones</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">an abomination</span>}</div>"}, {"index": 16, "class": "opinion_statement", "text": "which both featured some of the most boring writing and worst dialogue of a major motion picture (arguably) to date", "color": "#C8E6C9", "startPos": 6131, "endPos": 6246, "beforeText": "st Jedi (2017)\nIf that wasn\u2019t enough, the script is just one hell of a mess. It isn\u2019t an abomination like\nThe Phantom Menace or Attack of the Clones, ", "extractionText": "which both featured some of the most\nboring writing and worst dialogue of a major motion picture (arguably) to date", "afterText": ". The\nRise of Skywalker is at the very least, engaging and entertaining. That doesn\u2019t change\nthe fact that the movie is a mess, with the worst pacing ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">writing and dialogue</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">boring and worst</span>}</div>"}, {"index": 17, "class": "opinion_statement", "text": "The Rise of Skywalker is at the very least, engaging and entertaining", "color": "#C8E6C9", "startPos": 6248, "endPos": 6317, "beforeText": " Menace or Attack of the Clones, which both featured some of the most\nboring writing and worst dialogue of a major motion picture (arguably) to date. ", "extractionText": "The\nRise of Skywalker is at the very least, engaging and entertaining", "afterText": ". That doesn\u2019t change\nthe fact that the movie is a mess, with the worst pacing of the Disney Era. Rarely\ndoes this film slow down for a moment of just", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The Rise of Skywalker</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">engaging and entertaining</span>}</div>"}, {"index": 18, "class": "opinion_statement", "text": "the movie is a mess, with the worst pacing of the Disney Era", "color": "#C8E6C9", "startPos": 6353, "endPos": 6413, "beforeText": "f a major motion picture (arguably) to date. The\nRise of Skywalker is at the very least, engaging and entertaining. That doesn\u2019t change\nthe fact that ", "extractionText": "the movie is a mess, with the worst pacing of the Disney Era", "afterText": ". Rarely\ndoes this film slow down for a moment of just talking or any true emotional beats.\nGenuinely, the only two I can think of are the scenes betw", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">a mess, worst pacing</span>}</div>"}, {"index": 19, "class": "opinion_statement", "text": "Rarely does this film slow down for a moment of just talking or any true emotional beats", "color": "#C8E6C9", "startPos": 6415, "endPos": 6503, "beforeText": "lker is at the very least, engaging and entertaining. That doesn\u2019t change\nthe fact that the movie is a mess, with the worst pacing of the Disney Era. ", "extractionText": "Rarely\ndoes this film slow down for a moment of just talking or any true emotional beats", "afterText": ".\nGenuinely, the only two I can think of are the scenes between Kylo and Ben and Rey\nand Luke, which just so happen to be two of the best scenes in th", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The film</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">slow down, true emotional beats</span>}</div>"}, {"index": 20, "class": "opinion_statement", "text": "the scenes between Kylo and Ben and Rey and Luke, which just so happen to be two of the best scenes in the film (and actually are two of my favorite scenes in the entire franchise)", "color": "#C8E6C9", "startPos": 6548, "endPos": 6727, "beforeText": " the Disney Era. Rarely\ndoes this film slow down for a moment of just talking or any true emotional beats.\nGenuinely, the only two I can think of are ", "extractionText": "the scenes between Kylo and Ben and Rey\nand Luke, which just so happen to be two of the best scenes in the film (and actually\nare two of my favorite scenes in the entire franchise", "afterText": "). For some reason, the choice\nwas made to make this film a sprint for the entire two hour and twenty two minute\n&quot;&quot;&quot;\n\n**Page 5**\n&quot;&quot;&quot;\nruntime, which ju", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">the scenes</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">best scenes, favorite scenes</span>}</div>"}, {"index": 21, "class": "audience_impact", "text": "which just left me feeling exhausted as the credits began to roll", "color": "#D2E3FC", "startPos": 6869, "endPos": 6934, "beforeText": "ranchise). For some reason, the choice\nwas made to make this film a sprint for the entire two hour and twenty two minute\n&quot;&quot;&quot;\n\n**Page 5**\n&quot;&quot;&quot;\nruntime, ", "extractionText": "which just left me feeling exhausted as the credits began to roll", "afterText": ". I will say, I\ndid enjoy the ride much more the second time as I knew what was coming and\nwasn\u2019t totally taken out of the movie with the Rey Palpatin", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">fatigued, drained</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">the film&#x27;s pacing</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">the reviewer</span>}</div>"}, {"index": 22, "class": "audience_impact", "text": "I did enjoy the ride much more the second time as I knew what was coming and wasn\u2019t totally taken out of the movie with the Rey Palpatine reveal", "color": "#D2E3FC", "startPos": 6948, "endPos": 7092, "beforeText": "the entire two hour and twenty two minute\n&quot;&quot;&quot;\n\n**Page 5**\n&quot;&quot;&quot;\nruntime, which just left me feeling exhausted as the credits began to roll. I will say, ", "extractionText": "I\ndid enjoy the ride much more the second time as I knew what was coming and\nwasn\u2019t totally taken out of the movie with the Rey Palpatine reveal", "afterText": ".\nThe Sith Throne from The Rise of Skywalker (2019)\nwhat are some positives about this movie? There has to be some after all\nsince I did give it three", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">engaged, less confused</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">knowing the plot</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">the reviewer</span>}</div>"}, {"index": 23, "class": "opinion_statement", "text": "the scene with Ben Solo and Han Solo sharing another moment together on the remains of the Death Star II is truly amazing, and one of the best the entire series has to offer", "color": "#C8E6C9", "startPos": 7270, "endPos": 7443, "beforeText": "ise of Skywalker (2019)\nwhat are some positives about this movie? There has to be some after all\nsince I did give it three stars\u2026 As mentioned above, ", "extractionText": "the scene with Ben\nSolo and Han Solo sharing another moment together on the remains of the Death\nStar II is truly amazing, and one of the best the entire series has to offer", "afterText": ". It acts as a\nreflection of Han\u2019s death scene in The Force Awakens, and features both Harrison\nFord and Adam Driver proving why they are the two best", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">the scene</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">truly amazing, best</span>}</div>"}, {"index": 24, "class": "opinion_statement", "text": "Ford and Adam Driver proving why they are the two best actors in Star Wars", "color": "#C8E6C9", "startPos": 7539, "endPos": 7613, "beforeText": "ng, and one of the best the entire series has to offer. It acts as a\nreflection of Han\u2019s death scene in The Force Awakens, and features both Harrison\n", "extractionText": "Ford and Adam Driver proving why they are the two best actors in Star Wars", "afterText": ".\nSimilarly, the scene between Rey and Luke (now a Force ghost) is also fantastic,\noutside of Luke\u2019s \u201ca Jedi\u2019s weapon should never be handled so carel", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Ford and Adam Driver</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">best actors</span>}</div>"}, {"index": 25, "class": "opinion_statement", "text": "the scene between Rey and Luke is also fantastic", "color": "#C8E6C9", "startPos": 7626, "endPos": 7656, "beforeText": "s death scene in The Force Awakens, and features both Harrison\nFord and Adam Driver proving why they are the two best actors in Star Wars.\nSimilarly, ", "extractionText": "the scene between Rey and Luke", "afterText": " (now a Force ghost) is also fantastic,\noutside of Luke\u2019s \u201ca Jedi\u2019s weapon should never be handled so carelessly\u201d line, which\nwas clearly written to a", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The scene</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">fantastic</span>}</div>"}, {"index": 26, "class": "opinion_statement", "text": "Luke\u2019s \u201ca Jedi\u2019s weapon should never be handled so carelessly\u201d line", "color": "#C8E6C9", "startPos": 7707, "endPos": 7774, "beforeText": "er proving why they are the two best actors in Star Wars.\nSimilarly, the scene between Rey and Luke (now a Force ghost) is also fantastic,\noutside of ", "extractionText": "Luke\u2019s \u201ca Jedi\u2019s weapon should never be handled so carelessly\u201d line", "afterText": ", which\nwas clearly written to appease critics of Luke\u2019s portrayal in The Last Jedi. Luke finally\ngets to lift the X-wing, as the music of Yoda and th", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The line</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">written to appease critics</span>}</div>"}, {"index": 27, "class": "opinion_statement", "text": "John Williams\u2019 final Star Wars score is just as good as ever", "color": "#C8E6C9", "startPos": 8003, "endPos": 8063, "beforeText": "Jedi. Luke finally\ngets to lift the X-wing, as the music of Yoda and the Force from Empire Strikes Back\nswirls to an uproar in a truly iconic moment. ", "extractionText": "John Williams\u2019 final Star Wars score is\njust as good as ever", "afterText": ", and he deservedly earns a cameo in the film as the bartender on\nKijimi. C-3PO (Anthony Daniels) is probably my favorite part of the film. The\ncharac", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">John Williams\u2019 score</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">just as good as ever</span>}</div>"}, {"index": 28, "class": "opinion_statement", "text": "C-3PO (Anthony Daniels) is probably my favorite part of the film", "color": "#C8E6C9", "startPos": 8137, "endPos": 8201, "beforeText": " iconic moment. John Williams\u2019 final Star Wars score is\njust as good as ever, and he deservedly earns a cameo in the film as the bartender on\nKijimi. ", "extractionText": "C-3PO (Anthony Daniels) is probably my favorite part of the film", "afterText": ". The\ncharacter we all know and love finally finds his way back into the main cast after\nserving as a background character for several movies across b", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">C-3PO</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">favorite part</span>}</div>"}, {"index": 29, "class": "opinion_statement", "text": "The character we all know and love finally finds his way back into the main cast", "color": "#C8E6C9", "startPos": 8203, "endPos": 8283, "beforeText": "od as ever, and he deservedly earns a cameo in the film as the bartender on\nKijimi. C-3PO (Anthony Daniels) is probably my favorite part of the film. ", "extractionText": "The\ncharacter we all know and love finally finds his way back into the main cast", "afterText": " after\nserving as a background character for several movies across both the Prequels and\nSequels, and in doing so, has his best showing in ANY of the ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The character</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">finally finds his way back</span>}</div>"}, {"index": 30, "class": "opinion_statement", "text": "has his best showing in ANY of the Star Wars films", "color": "#C8E6C9", "startPos": 8398, "endPos": 8448, "beforeText": "nds his way back into the main cast after\nserving as a background character for several movies across both the Prequels and\nSequels, and in doing so, ", "extractionText": "has his best showing in ANY of the Star Wars films", "afterText": ".\nSo\n&quot;&quot;&quot;\n\n**Page 6**\n&quot;&quot;&quot;\nSeriously, whoever made the call to give 3PO this treatment deserves a raise because\nnearly anytime he talked, he had me dyin", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">C-3PO</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">best showing</span>}</div>"}, {"index": 31, "class": "audience_impact", "text": "he had me dying of laughter", "color": "#D2E3FC", "startPos": 8584, "endPos": 8611, "beforeText": "tar Wars films.\nSo\n&quot;&quot;&quot;\n\n**Page 6**\n&quot;&quot;&quot;\nSeriously, whoever made the call to give 3PO this treatment deserves a raise because\nnearly anytime he talked, ", "extractionText": "he had me dying of laughter", "afterText": ".\nBabu Frik in The Rise of Skywalker (2019)\nA List of Random Bits I Loved About the Film:\nBabu Frik is an icon, a king, and he needs to be protected a", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">amusement, joy</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">C-3PO</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">the reviewer</span>}</div>"}, {"index": 32, "class": "opinion_statement", "text": "Babu Frik is an icon, a king", "color": "#C8E6C9", "startPos": 8701, "endPos": 8729, "beforeText": "ecause\nnearly anytime he talked, he had me dying of laughter.\nBabu Frik in The Rise of Skywalker (2019)\nA List of Random Bits I Loved About the Film:\n", "extractionText": "Babu Frik is an icon, a king", "afterText": ", and he needs to be protected at all costs\nZori Bliss and Poe Dameron would be great candidates for a Disney+ show\nFinn being force sensitive is some", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Babu Frik</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">icon, king</span>}</div>"}, {"index": 33, "class": "opinion_statement", "text": "Zori Bliss and Poe Dameron would be great candidates for a Disney+ show", "color": "#C8E6C9", "startPos": 8773, "endPos": 8844, "beforeText": "in The Rise of Skywalker (2019)\nA List of Random Bits I Loved About the Film:\nBabu Frik is an icon, a king, and he needs to be protected at all costs\n", "extractionText": "Zori Bliss and Poe Dameron would be great candidates for a Disney+ show", "afterText": "\nFinn being force sensitive is something I like, but wish they delved deeper into\nIan McDiarmid is FUCKING terrifying as always as Palpatine here\nBill", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Zori Bliss and Poe Dameron</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">great candidates</span>}</div>"}, {"index": 34, "class": "opinion_statement", "text": "Finn being force sensitive is something I like", "color": "#C8E6C9", "startPos": 8845, "endPos": 8891, "beforeText": "Film:\nBabu Frik is an icon, a king, and he needs to be protected at all costs\nZori Bliss and Poe Dameron would be great candidates for a Disney+ show\n", "extractionText": "Finn being force sensitive is something I like", "afterText": ", but wish they delved deeper into\nIan McDiarmid is FUCKING terrifying as always as Palpatine here\nBillie Lourd being in these movies\u2026 though I wish t", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Finn</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">I like</span>}</div>"}, {"index": 35, "class": "opinion_statement", "text": "Ian McDiarmid is FUCKING terrifying as always as Palpatine here", "color": "#C8E6C9", "startPos": 8926, "endPos": 8989, "beforeText": "i Bliss and Poe Dameron would be great candidates for a Disney+ show\nFinn being force sensitive is something I like, but wish they delved deeper into\n", "extractionText": "Ian McDiarmid is FUCKING terrifying as always as Palpatine here", "afterText": "\nBillie Lourd being in these movies\u2026 though I wish they did more with her (see;\nBooksmart)\nThe usage of Carrie Fisher is shockingly good for using unu", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Ian McDiarmid</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">terrifying</span>}</div>"}, {"index": 36, "class": "opinion_statement", "text": "The usage of Carrie Fisher is shockingly good", "color": "#C8E6C9", "startPos": 9080, "endPos": 9125, "beforeText": "McDiarmid is FUCKING terrifying as always as Palpatine here\nBillie Lourd being in these movies\u2026 though I wish they did more with her (see;\nBooksmart)\n", "extractionText": "The usage of Carrie Fisher is shockingly good", "afterText": " for using unused footage from The\nForce Awakens\nBilly Dee Williams as Lando, just yes\nThe voice cameos of fallen Jedi in the finale\nThe fact that Por", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The usage</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">shockingly good</span>}</div>"}, {"index": 37, "class": "opinion_statement", "text": "Billy Dee Williams as Lando, just yes", "color": "#C8E6C9", "startPos": 9174, "endPos": 9211, "beforeText": "\u2026 though I wish they did more with her (see;\nBooksmart)\nThe usage of Carrie Fisher is shockingly good for using unused footage from The\nForce Awakens\n", "extractionText": "Billy Dee Williams as Lando, just yes", "afterText": "\nThe voice cameos of fallen Jedi in the finale\nThe fact that Porgs made it into this movie\n&quot;&quot;&quot;\n\n**Page 7**\n&quot;&quot;&quot;\nExegol is a dope planet and the Sith pa", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Billy Dee Williams</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">just yes</span>}</div>"}, {"index": 38, "class": "opinion_statement", "text": "Kylo and Rey\u2019s force facetime continuing to evolve from The Last Jedi was actually awesome", "color": "#C8E6C9", "startPos": 9401, "endPos": 9491, "beforeText": "finale\nThe fact that Porgs made it into this movie\n&quot;&quot;&quot;\n\n**Page 7**\n&quot;&quot;&quot;\nExegol is a dope planet and the Sith palace has some awesome production\ndesign\n", "extractionText": "Kylo and Rey\u2019s force facetime continuing to evolve from The Last Jedi was\nactually awesome", "afterText": " and was the one thing Abrams and pals did a great job in\nbuilding on from Rian Johnson\u2019s film\nBen Solo fighting SO differently than Kylo Ren\nThe Ligh", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Kylo and Rey\u2019s force facetime</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">actually awesome</span>}</div>"}, {"index": 39, "class": "opinion_statement", "text": "was the one thing Abrams and pals did a great job in building on from Rian Johnson\u2019s film", "color": "#C8E6C9", "startPos": 9496, "endPos": 9585, "beforeText": "and the Sith palace has some awesome production\ndesign\nKylo and Rey\u2019s force facetime continuing to evolve from The Last Jedi was\nactually awesome and ", "extractionText": "was the one thing Abrams and pals did a great job in\nbuilding on from Rian Johnson\u2019s film", "afterText": "\nBen Solo fighting SO differently than Kylo Ren\nThe Lightsaber Duel on the Death Star II remains\nKylo Ren Gif from The Rise of Skywalker (2019)\nOpinio", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Abrams and pals&#x27; work</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">did a great job</span>}</div>"}, {"index": 40, "class": "opinion_statement", "text": "Ben Solo fighting SO differently than Kylo Ren", "color": "#C8E6C9", "startPos": 9586, "endPos": 9632, "beforeText": "nuing to evolve from The Last Jedi was\nactually awesome and was the one thing Abrams and pals did a great job in\nbuilding on from Rian Johnson\u2019s film\n", "extractionText": "Ben Solo fighting SO differently than Kylo Ren", "afterText": "\nThe Lightsaber Duel on the Death Star II remains\nKylo Ren Gif from The Rise of Skywalker (2019)\nOpinions will always vary on Star Wars, and I doubt t", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Ben Solo fighting</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">fighting differently</span>}</div>"}, {"index": 41, "class": "opinion_statement", "text": "A Film as Beautiful as the Paintings Within \u2014 \u2605\u2605\u2605\u2605\u2605", "color": "#C8E6C9", "startPos": 11276, "endPos": 11327, "beforeText": "ady on Fire at the Philadelphia\nFilm Festival and wrote up an official review which you can check out here:\nMOVIE REVIEW \u2014 Portrait of a Lady on Fire\n", "extractionText": "A Film as Beautiful as the Paintings Within \u2014 \u2605\u2605\u2605\u2605\u2605", "afterText": "\nmedium.com\nStar Wars\nMovies\nFilm\nFilm Reviews\nMovie Review\n&quot;&quot;&quot;\n\n", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Portrait of a Lady on Fire</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">Beautiful</span>}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>
