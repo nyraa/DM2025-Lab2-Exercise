@@ -4,4 +4,5 @@ config/.env
 .venv/
 *.bin
 *.gz
-
+bert_results/
+submission/
